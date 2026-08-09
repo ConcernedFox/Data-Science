@@ -1,0 +1,20 @@
+import pandas as pd
+
+Variable1 = pd.read_csv("/Users/puspendra/Data Science/titanic(1).csv")
+
+print(Variable1.head(5))
+print(Variable1.tail(5))
+print(Variable1.info())
+print(Variable1.shape)
+print(Variable1[["Age","Siblings/Spouses Aboard","Parents/Children Aboard", "Fare"]].mean())
+print(Variable1["Pclass"].value_counts())
+print(Variable1.columns)
+print(Variable1.isnull().sum())
+print(Variable1["Gender"] == "male")
+print(Variable1["Gender"].value_counts())
+print((Variable1["Age"] > 30).sum())
+print((Variable1["Fare"] > 100).sum())
+print(Variable1)
+print(Variable1[Variable1["Survived"] == 1])
+print(Variable1[Variable1["Gender"] == "male"])
+print(Variable1[(Variable1["Gender"] == "female")&(Variable1["Survived"] == 1)]) 
