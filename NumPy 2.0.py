@@ -4,7 +4,9 @@ List = [1, 2, 3, 4, 5, ]
 
 Array = np.array(List)
 
-Array = Array * Array
+List = List * 2
+
+Array = Array * 2
 
 print(List)
 

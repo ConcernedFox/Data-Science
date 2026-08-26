@@ -13,3 +13,4 @@ print(Variable1[["sepal_length","sepal_width","petal_length", "petal_width"]].ta
 print(Variable1[["sepal_length","sepal_width","petal_length", "petal_width"]].min())
 print(Variable1[["sepal_length","sepal_width","petal_length", "petal_width"]].max())
 print(Variable1["species"].value_counts())
+print(Variable1["species"])
