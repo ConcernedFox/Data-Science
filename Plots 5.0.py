@@ -7,3 +7,4 @@ y2 = [20, 40, 60, 80, 100]
 
 plots.hist(y2,bins = x2, rwidth = 10)
 plots.show()
+
